@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<body class="task-list-body">
+<a href="{% url 'task_new' %}" class="new-task-btn">New Task</a>
+
+
+{% for task in tasks %}
+    <div class="task">
+        <div class="task-header">
+            <h2>{{ task.title }}</h2>
+            <div class="buttons">
+                <a href="{% url 'task_edit' pk=task.pk %}"><button class="edit-delete-btn">Edit</button></a>
+                <a href="{% url 'task_delete' pk=task.pk %}"><button class="edit-delete-btn">Delete</button></a>
+                <a href="{% url 'task_delete' pk=task.pk %}"><button class="edit-delete-btn">Complete</button></a>
+                <a href="{% url 'task_edit' pk=task.pk %}"><button class="edit-delete-btn">Complete by:{{ task.due_date}}</button></a>
+
+            </div>
+        </div>
+        <div class="task-content">
+            <div class="description">
+                <p>{{ task.description }}</p>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</body>
+{% endblock %}
+

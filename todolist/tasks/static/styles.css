@@ -1,0 +1,134 @@
+.task-list-body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #333;
+    font-family: 'Arial', sans-serif;  /* Change the font family */
+    font-size: 24px;  /* Increase the font size */
+}
+
+.task {
+    padding-top: 5px;
+
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.description {
+    background-color: #d0d0d0;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.new-task-btn {
+
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 10px 0;
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.edit-delete-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+
+
+
+body {
+    background-color: grey;  /* 20% of the area around the actual content */
+}
+
+.task_new-outer-container {
+    background-color: #333;  /* Charcoal black color */
+    padding: 20px;
+}
+
+.task_new-title-group input,
+.task_new-description-group textarea,
+.task_new-due-completed-group input {
+    width: 70%;
+    background-color: #333;  /* Charcoal black color */
+    color: white;
+    border-radius: 5px;  /* Rounded corners */
+}
+
+.task_new-due-completed-group {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70%;  /* Add this line to prevent the group from extending beyond its container */
+}
+
+.task_new-save-group {
+    text-align: center;
+}
+
+.task_new-completed-group label {
+    display: flex;  /* Align items in a row */
+    align-items: center;  /* Vertically center the items */
+
+    color: white;  /* Change the color to white */
+}
+
+.task_new-save-btn {
+    background-color: #b22222;  /* Fire color */
+    color: white;
+    border-radius: 5px;  /* Curved corners */
+}
+
+

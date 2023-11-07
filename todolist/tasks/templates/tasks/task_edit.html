@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<h2 class="text-center">Create New Task</h2>
+
+
+<div class="task_new-outer-container">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h2 class="text-center">Create New Task</h2>
+
+            <div class="col-6 task_new-task-container">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="form-group task_new-title-group">
+                        <h2>{{ form.title }}</h2>
+                    </div>
+                    <div class="form-group task_new-description-group">
+                        {{ form.description }}
+                    </div>
+                    <div class="form-group task_new-due-completed-group">
+                        <div class="task_new-due-group">
+                            {{ form.due_date }}
+                        </div>
+
+                    </div>
+                    <div class="form-group task_new-save-group">
+                        <button type="submit" class="btn btn-primary task_new-save-btn">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
